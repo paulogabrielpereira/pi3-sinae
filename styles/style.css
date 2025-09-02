@@ -17,7 +17,7 @@ body,html{
 h1{
     font-weight: bolder !important;
 }
-.BTIN{
+.btn{
     display: block !important;
     width: 10em;
      border: none;
@@ -29,34 +29,34 @@ h1{
     padding: 0.5em;
     
 }
-.BTIN1{  
+.btn1{  
     background: #3854f5;
 }
 
-.BTIN1:active{
+.btn1:active{
     color: #3854f5;
     background: #ffffff;
 }
 
-.BTIN2{
+.btn2{
     
     background: #19a950;
     
 }
-.BTIN2:active{
+.btn2:active{
     color:  #19a950;
     background: #ffffff;
 }
 
 
 
-.BTIN3{
+.btn3{
     
     background: #d88c0c;
     
     
 }
-.BTIN3:active{
+.btn3:active{
     color: #d88c0c;
     background: #ffffff;
 }
@@ -101,9 +101,6 @@ input:focus{
     background: #495464;
     color: white;
 }
-
-
-
 
 td:hover{
     border: 1px solid black;
