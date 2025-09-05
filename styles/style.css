@@ -1,0 +1,156 @@
+body,html{
+    width: 100%;    
+    height: 100%;
+    font-family:"Lato",sans-serif !important;
+    background : #eef6f9;
+}
+
+.login{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    background: #eff7fa;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+h1{
+    font-weight: bolder !important;
+}
+.btn{
+    display: block !important;
+    width: 20em;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.btn:hover{
+  
+    transform: translateY(-5px); /* levita pra cima */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* sombra maior */
+}
+
+.btn1{  
+    background: #3854f5 !important;
+     color: white !important;
+}
+
+
+
+.btn2{
+    
+    background: #19a950 !important;
+     color: white !important;
+    
+}
+
+.btn3{
+     color: white !important;
+    background: #d88c0c !important;
+}
+.iconesB{
+    font-size: 3em !important;
+}
+
+.butoes{
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.logador{
+    display: flex;
+    flex-direction: column; /* empilha verticalmente */
+    gap: 10px;
+
+}
+
+input::placeholder {
+    font-family: Arial, sans-serif;}
+
+input:focus{
+    border: 1px solid rgb(117, 115, 115) !important;
+    outline: none;
+}
+
+.butao_login{
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #3452f5;
+    font-size: 1em;
+}
+
+.butao_login:active{
+    background: white  ;
+    color: #3452f5;
+}
+
+.cabecalho{
+    background: #f3f4f6;
+    color: #495464;
+}
+
+td:hover{
+    background:  rgb(221, 217, 217);
+}
+
+td {
+    position: relative;
+    border: 2px solid rgb(162, 162, 162) !important;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2) !important;
+}
+
+table{
+
+    border-collapse: separate;  
+    border-spacing: 0.5em;  
+    color: #495464 !important;
+}
+
+
+td .tooltip {
+    visibility: hidden; 
+    opacity: 0;
+    position: absolute;
+    bottom: 100%; 
+    left: 52%;     
+    transform: translateX(-50%) translateY(-5px);
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; 
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+td .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px; 
+    border-style: solid;
+    border-color: rgb(83, 83, 83) transparent transparent transparent; 
+}
+td:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hoje{
+    background: #3b74f8 !important;
+}
