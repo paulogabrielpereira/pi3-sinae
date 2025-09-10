@@ -2,7 +2,7 @@ body,html{
     width: 100%;    
     height: 100%;
     font-family:"Lato",sans-serif !important;
-    background-color: #e6e6e6 !important;
+    background : #eef6f9;
 }
 
 .login{
@@ -18,49 +18,45 @@ body,html{
 h1{
     font-weight: bolder !important;
 }
-
 .btn{
     display: block !important;
-    width: 10em;
-     border: none;
+    width: 20em;
+    border: none;
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    background: #3452f5;
     font-size: 1em;
     padding: 0.5em;
+    transition: 0.5s ease-in-out;
     
 }
-.btn1{  
-    background: #3854f5;
+
+.btn:hover{
+  
+    transform: translateY(-5px); /* levita pra cima */
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* sombra maior */
 }
 
-.btn1:active{
-    color: #3854f5;
-    background: #ffffff;
+.btn1{  
+    background: #3854f5 !important;
+     color: white !important;
 }
+
+
 
 .btn2{
     
-    background: #19a950;
+    background: #19a950 !important;
+     color: white !important;
     
 }
-.btn2:active{
-    color:  #19a950;
-    background: #ffffff;
-}
-
-
 
 .btn3{
-    
-    background: #d88c0c;
-    
-    
+     color: white !important;
+    background: #d88c0c !important;
 }
-.btn3:active{
-    color: #d88c0c;
-    background: #ffffff;
+.iconesB{
+    font-size: 3em !important;
 }
 
 .butoes{
@@ -100,16 +96,69 @@ input:focus{
 }
 
 .cabecalho{
-    background: #495464;
-    color: white;
+    background: #f3f4f6;
+    color: #495464;
 }
 
 td:hover{
-    border: 1px solid black;
+    background:  rgb(221, 217, 217);
 }
 
-/* login.html */
-.login-body
-{
-    align-items: center;
+td {
+    position: relative;
+    border: 2px solid rgb(162, 162, 162) !important;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.vazio{
+    position: relative;
+    border: none;
+   
+    background-color: transparent !important;
+    padding: 10px;
+}
+
+table{
+
+    border-collapse: separate;  
+    border-spacing: 0.5em;  
+    color: #495464 !important;
+}
+
+
+td .tooltip {
+    visibility: hidden; 
+    opacity: 0;
+    position: absolute;
+    bottom: 100%; 
+    left: 52%;     
+    transform: translateX(-50%) translateY(-5px);
+    background-color: rgb(83, 83, 83);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; 
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+td .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px; 
+    border-style: solid;
+    border-color: rgb(83, 83, 83) transparent transparent transparent; 
+}
+td:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hoje{
+    background: #3b74f8 !important;
 }
