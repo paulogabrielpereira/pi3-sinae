@@ -1,5 +1,32 @@
 html, body
 {
     background-color: #eff9fb !important;
-    min-height: 100vh;
+}
+
+body
+{
+    align-items: center !important;
+}
+
+.login-card
+{
+    width: 35%;
+    position: relative !important;
+    top: 40% !important;
+}
+
+.login-btn{
+    display: block !important;
+    width: 20em;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        transform: translateY(-.5px); /* levita pra cima */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* sombra maior */
+    }
 }

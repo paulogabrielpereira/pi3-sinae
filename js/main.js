@@ -20,9 +20,9 @@ function gerarCalendario() {
     // Cabeçalho do mês
     let tabela = `<h4 class="text-center">${nomesMeses[mes]} ${ano}</h4>`;
     tabela += '<table class="table table-borderless text-center">';
-    tabela += '<tr></tr>';
+    tabela += '<tr>';
     nomesDias.forEach(d => tabela += `<th>${d}</th>`);
-    tabela += '<tr></tr><tr></tr>';
+    tabela += '</tr>';
 
     // Preencher os dias vazios antes do primeiro dia
     for (let i = 0; i < primeiroDia; i++) {
