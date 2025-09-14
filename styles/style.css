@@ -3,76 +3,29 @@ body,html{
     min-height: 100vh;
     margin: 0;
     font-family:"Lato",sans-serif !important;
-    background : #efefef;
+    background : #efefef !important;
 }
 
 h1{
     font-weight: bolder !important;
 }
 
-.main-header{
-    background-color: white;
-    padding: .8em 0;
-    border-bottom: 2px solid rgba(162, 162, 162, 0.325);
-}
-
 .cabecalho{
     background: white;
 }
 
-.btn1{  
-    background: #3854f5 !important;
-     color: white !important;
-}
-
-
-
-.btn2{
-    
-    background: #19a950 !important;
-     color: white !important;
-    
-}
-
-.btn3{
-     color: white !important;
-    background: #d88c0c !important;
-}
-.iconesB{
-    font-size: 3em !important;
-}
-
-.butoes{
-
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-input::placeholder {
+input::placeholder{
     font-family: Arial, sans-serif;
 }
 
 input:focus{
-    border: 1px solid rgb(117, 115, 115) !important;
-    outline: none;
-}
-
-.butao_login{
-    border: none;
-    color: white;
-    border-radius: 10px;
-    font-weight: bold;
-    background: #3452f5;
-    font-size: 1em;
-}
-
-.butao_login:active{
-    background: white  ;
-    color: #3452f5;
+    border: 2px solid rgb(153, 171, 184) !important;
+    box-shadow: none !important;
+    transition: border .3s ease-in-out;
 }
 
 td:hover{
-    background:  rgb(221, 217, 217);
+    background: rgb(221, 217, 217);
 }
 
 td {
@@ -82,13 +35,6 @@ td {
     background-color: white;
     padding: 10px;
     
-}
-
-.vazio{
-    position: relative;
-    border: none;
-    background-color: transparent !important;
-    padding: 10px;
 }
 
 table{
@@ -114,6 +60,7 @@ td .tooltip {
     transition: opacity 0.3s;
     z-index: 10;
 }
+
 td .tooltip::after {
     content: "";
     position: absolute;
@@ -124,11 +71,14 @@ td .tooltip::after {
     border-style: solid;
     border-color: rgb(83, 83, 83) transparent transparent transparent; 
 }
+
 td:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
 
-.hoje{
-    background: #3b74f8 !important;
+.main-header{
+    background-color: white;
+    padding: .8em 0;
+    border-bottom: 2px solid rgba(162, 162, 162, 0.325);
 }

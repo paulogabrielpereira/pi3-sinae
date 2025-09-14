@@ -26,7 +26,7 @@ body
     padding: 0.5em;
     transition: 0.5s ease-in-out;
     &:hover{
-        transform: translateY(-.5px); /* levita pra cima */
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* sombra maior */
+        transform: translateY(-.5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 }

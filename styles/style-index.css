@@ -1,0 +1,82 @@
+.btn1{  
+    background: #3854f5 !important;
+    color: white !important;
+}
+
+.btn2{
+    
+    background: #19a950 !important;
+    color: white !important;
+    
+}
+
+.btn3{
+    background: #d88c0c !important;
+    color: white !important;
+}
+
+.btn1,
+.btn2,
+.btn3
+{
+    min-width: 20vw;
+    &:hover
+    {
+        transform: translateY(-.5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+}
+
+.botoes{
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.today{
+    background: #3b74f8 !important;
+}
+
+.day{
+    cursor: pointer;
+    min-width: 10vw !important;
+}
+
+.empty{
+    position: relative;
+    border: none;
+    background-color: transparent !important;
+    padding: 10px;
+}
+
+.reminder
+{
+    background-color: #a7e7c5 !important;
+    border: 2px solid #1fc580 !important;
+    color: black !important;
+    font-weight: normal !important;
+    &:hover
+    {
+        background-color: #1fc580 !important;
+        transition: all .15s ease-in-out;
+    }
+}
+
+.today-reminder
+{
+    background-color: #19a950 !important;
+    color: white !important;
+}
+
+.delayed
+{
+    background-color: #ffbbbb !important;
+    border: 2px solid #e76461 !important;
+    color: black !important;
+    font-weight: normal !important;
+    &:hover
+    {
+        background-color: #e76461 !important;
+        transition: all .15s ease-in-out;
+    }
+}
