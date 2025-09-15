@@ -82,3 +82,21 @@ td:hover .tooltip {
     padding: .8em 0;
     border-bottom: 2px solid rgba(162, 162, 162, 0.325);
 }
+
+.btn-back
+{
+    font-size: 1em;
+    color: black;
+    gap: .4em;
+    transition: all .3s ease-in-out;
+    margin-bottom: 1em;
+    &:hover{
+        background: rgba(235, 235, 235, 0.863);
+        color: rgba(0, 0, 0, 0.659);
+    }
+}
+
+.btn-back .icon-back
+{
+    font-size: 1em;
+}
