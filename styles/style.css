@@ -108,3 +108,9 @@ td:hover .tooltip {
 {
     vertical-align: middle;
 }
+
+#borda_esquerda {
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
