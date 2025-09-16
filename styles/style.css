@@ -18,10 +18,12 @@ input::placeholder{
     font-family: Arial, sans-serif;
 }
 
-input:focus{
+input:focus,
+select:focus,
+textarea:focus
+{
     border: 2px solid rgb(153, 171, 184) !important;
     box-shadow: none !important;
-    transition: border .3s ease-in-out;
 }
 
 td:hover{
@@ -89,7 +91,8 @@ td:hover .tooltip {
     color: black;
     gap: .4em;
     transition: all .3s ease-in-out;
-    margin-bottom: 1em;
+    position: relative;
+    bottom: 10%;
     &:hover{
         background: rgba(235, 235, 235, 0.863);
         color: rgba(0, 0, 0, 0.659);
@@ -99,4 +102,9 @@ td:hover .tooltip {
 .btn-back .icon-back
 {
     font-size: 1em;
+}
+
+.header-block
+{
+    vertical-align: middle;
 }

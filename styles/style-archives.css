@@ -1,0 +1,13 @@
+.form-search input
+{
+    border-radius: 1.15em 0 0 1.15em !important;
+    &:focus
+    {
+        border-color: #323232 !important;
+    }
+}
+
+.form-search button
+{
+    border-radius: 0 1.15em 1.15em 0 !important;
+}

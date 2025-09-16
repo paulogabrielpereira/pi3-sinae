@@ -27,9 +27,9 @@ function gerarCalendario() {
     // Preencher os dias do mês
     for (let dia = 1; dia <= diasNoMes; dia++) {
         if (dia === diaHoje) {
-            tabela += `<td class="day today text-white fw-bold border border-0"> <span class="tooltip">Marcar Consulta</span> ${dia}</td>`; // destaca dia atual
+            tabela += `<td class="day today text-white fw-bold border border-0"> <span class="tooltip">Agendar Atendimento</span> ${dia}</td>`; // destaca dia atual
         } else {
-            tabela += `<td class="day"> <span class="tooltip">Marcar Consulta</span> ${dia}</td>`;
+            tabela += `<td class="day"> <span class="tooltip">Agendar Atendimento</span> ${dia}</td>`;
         }
         if ((dia + primeiroDia) % 7 === 0) tabela += '</tr><tr>'; // nova linha a cada semana
     }
