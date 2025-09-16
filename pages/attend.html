@@ -13,11 +13,13 @@
 <body class="pb-5">
     <header class="main-header">
         <div class="cabecalho pt-2 d-flex">
-            <a href="../index.html" class="btn d-flex align-items-center text-decoration-none ms-3 fw-bolder rounded p-1">
+            <div class="header-block d-flex align-items-center">
+                <a href="../index.html" class="btn-back d-flex align-items-center text-decoration-none ms-3 fw-bolder rounded p-1">
                     <span class="material-symbols-outlined fw-bolder icon-back">arrow_back</span>
-                    <span class="ms-2">Voltar</span>
-            </a>
-            <h4 class="ms-5 mb-2 fw-bolder text-body">Atendimentos</h4>
+                    <span>Voltar</span>
+                </a>
+                <h4 class="ms-5 mb-2 fw-bolder text-body">Atendimentos</h4>
+            </div>
             <p id="data" class="ms-auto mb-0 me-3"></p>
         </div>
     </header>
@@ -56,13 +58,14 @@
                         <div class="card border-0">
                             <div class="card-body">
                                 <h6 class="fw-bolder text-success">Atendimento Agendado</h6>
-                                <h8 class="fw-bolder text-secondary">Listhiane - Psicóloga</h8><br>
-                                <h8 class="fw-bolder text-secondary">20/08/2025 - 14:00</h8>
+                                <p class="fw-bolder text-secondary">Listhiane - Psicóloga</p><br>
+                                <p class="fw-bolder text-secondary">20/08/2025 - 14:00</p>
                             </div>
                         </div>
                         <div class="d-inline-flex">
                             <button type="button" class="btn btn-outline-dark fw-bolder" data-bs-dismiss="modal">Reagendar</button>
                             <button type="button" class="btn btn-success fw-bolder ms-3">Iniciar Atendimento</button>
+                            <button type="button" class="btn btn-danger fw-bolder ms-3">Cancelar Atendimento</button>
                         </div>   
                     </button>
                     </div>
@@ -77,8 +80,8 @@
                         <div class="card border-0">
                             <div class="card-body">
                                 <h6 class="fw-bolder text-warning">Aguardando Confirmação</h6>
-                                <h8 class="fw-bolder text-secondary">Listhiane - Psicóloga</h8><br>
-                                <h8 class="fw-bolder text-secondary">21/08/2025 - 12:30</h8>
+                                <p class="fw-bolder text-secondary">Listhiane - Psicóloga</p><br>
+                                <p class="fw-bolder text-secondary">21/08/2025 - 12:30</p>
                             </div>
                         </div>
                         <div class="d-inline-flex">
@@ -92,6 +95,6 @@
             </div>
         </div>
     </main>
-    <script src="../js/main.js"></script>
+    <script src="../js/today.js"></script>
 </body>
 </html>

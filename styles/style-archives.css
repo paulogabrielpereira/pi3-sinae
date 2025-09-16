@@ -11,3 +11,27 @@
 {
     border-radius: 0 1.15em 1.15em 0 !important;
 }
+
+.card-files
+{
+    background-color: #d3d3d3 !important;
+}
+
+.none-block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3em;
+}
+
+.none-block .material-symbols-outlined
+{
+    font-size: 6em;
+}
+
+.none-alert
+{
+    font-size: 2em !important;
+}
