@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-attend.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <title>SINAE | Atender</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="cabecalho pt-2 d-flex">
+            <div class="header-block d-flex align-items-center">
+                <a href="attend.html" class="btn-back d-flex align-items-center text-decoration-none ms-3 fw-bolder rounded p-1">
+                    <span class="material-symbols-outlined fw-bolder icon-back">arrow_back</span>
+                    <span>Voltar</span>
+                </a>
+                <h4 class="ms-5 mb-2 fw-bolder text-body">Realizar Atendimento</h4>
+            </div>
+            <p id="data" class="ms-auto mb-0 me-3"></p>
+        </div>
+    </header>
+    <main class="d-flex justify-content-center">
+        <div class="card w-75 m-5">
+            <div class="card-header">
+                <div id="toolbar" class="border-0">
+                    <select class="ql-header" data-bs-toggle="tooltip" data-bs-placement="top" title="Tamanho da fonte">
+                        <option selected></option>
+                        <option value="1">Heading 1</option>
+                        <option value="2">Heading 2</option>
+                        <option value="3">Heading 3</option>
+                    </select>
+                    <button class="ql-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Negrito"></button>
+                    <button class="ql-italic" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Itálico"></button>
+                    <button class="ql-underline" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sublinhado"></button>
+                    <button class="ql-strike" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tachado"></button>
+                    <button class="ql-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adicionar link"></button>
+                    <button class="ql-image" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adicionar imagem"></button>
+                    <button class="ql-file material-symbols-outlined btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Adicionar arquivo">upload</button>
+                    <select class="ql-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Cor do texto"></select>
+                    <select class="ql-background" data-bs-toggle="tooltip" data-bs-placement="top" title="Cor de fundo"></select>
+                    <button class="ql-list" value="ordered" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lista númerica"></button>
+                    <button class="ql-list" value="bullet" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tópicos"></button>
+                    <select class="ql-align" data-bs-toggle="tooltip" data-bs-placement="top" title="Alinhar texto"></select>
+                    <button class="ql-clean" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Limpar formatação"></button>
+                </div>
+            </div>
+            <div id="editor"></div>
+            <button type="submit" class="btn btn-outline-success">Finalizar Atendimento</button>
+        </div>
+        <script src="../js/attend-editor.js"></script>
+    </main>
+</body>
+</html>

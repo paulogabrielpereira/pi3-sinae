@@ -114,3 +114,15 @@ td:hover .tooltip {
     border-top: none !important;
     border-bottom: none !important;
 }
+
+#editor
+{
+    min-height: 65vh;
+}
+
+#toolbar
+{
+    display: flex;
+    justify-content: center;
+    gap: 2em !important;
+}
