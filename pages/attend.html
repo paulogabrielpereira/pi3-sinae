@@ -62,9 +62,9 @@
                             </div>
                         </div>
                         <div class="d-inline-flex">
-                            <button type="button" class="btn btn-outline-dark fw-bolder" data-bs-dismiss="modal">Reagendar</button>
+                            <button type="button" class="btn btn-outline-dark fw-bolder">Reagendar</button>
                             <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
-                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3">Cancelar Atendimento</button>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3" id="cancelAttendBtn">Cancelar Atendimento</button>
                         </div>   
                     </button>
                     </div>
@@ -83,17 +83,36 @@
                             </div>
                         </div>
                         <div class="d-inline-flex">
-                            <button type="button" class="btn btn-outline-dark fw-bolder" data-bs-dismiss="modal">Reagendar</button>
+                            <button type="button" class="btn btn-outline-dark fw-bolder">Reagendar</button>
                             <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
-                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3">Cancelar Atendimento</button>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3" id="cancelAttendBtn">Cancelar Atendimento</button>
                         </div> 
                     </button>
-                    </div>
-                    
+                    </div>  
                 </div>
             </div>
         </div>
     </main>
+
+    <section class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true" aria-labelledby="confirmModalTitle">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bolder" id="confirmModalTitle">Confirmação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja cancelar este atendimento?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-danger">Sim</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="../js/today.js"></script>
+    <script src="../js/attend.js"></script>
 </body>
 </html>

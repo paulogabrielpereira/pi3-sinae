@@ -1,4 +1,3 @@
-// Inicializa o Quill
 var quill = new Quill('#editor', {
   modules: {
     toolbar: '#toolbar'
@@ -6,20 +5,19 @@ var quill = new Quill('#editor', {
   theme: 'snow'
 });
 
-// Função “fake” de upload (apenas retorna URL de teste)
 function fakeUpload(file) {
   return new Promise((resolve) => {
     setTimeout(() => {
       if(file.type.startsWith('image/')){
-        resolve('https://via.placeholder.com/150'); // URL de imagem teste
+        resolve('https://via.placeholder.com/150');
       } else {
-        resolve('https://example.com/fakefile/' + file.name); // URL de arquivo teste
+        resolve('https://example.com/fakefile/' + file.name); 
       }
     }, 500);
   });
 }
 
-// Handler de imagem
+
 var toolbarModule = quill.getModule('toolbar');
 toolbarModule.addHandler('image', () => {
   const input = document.createElement('input');
@@ -35,7 +33,6 @@ toolbarModule.addHandler('image', () => {
   };
 });
 
-// Handler de arquivo genérico
 toolbarModule.addHandler('file', () => {
   const input = document.createElement('input');
   input.type = 'file';
@@ -55,5 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
   var tooltipTriggerList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
-
 })
