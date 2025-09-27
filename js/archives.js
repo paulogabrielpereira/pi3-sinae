@@ -1,3 +1,5 @@
+// archives.js
+
 const none_alert = document.querySelector('.none-block');
 const search_input = document.querySelector('#search');
 const card_files = document.querySelector('.card-files');
@@ -42,10 +44,12 @@ function fetchData() {
     fetch('../api.php')
         .then(res => res.json())
         .then(json => {
-            data = json;
+            data = json.alunos;
             renderCards();
         })
-        .catch(err => console.error('Erro ao buscar dados:', err));
+        .catch(err => {
+          console.error('Erro ao buscar dados:', err);
+        });
 }
 
 search_input.addEventListener('input', () => {
@@ -61,3 +65,7 @@ search_input.addEventListener('input', () => {
 });
 
 fetchData();
+
+// list-archives.js
+
+const history_title = document.querySelector('');
