@@ -1,21 +1,34 @@
-const cards_attend = document.querySelectorAll('.card.border-warning');
+const reschedule_btns = document.querySelectorAll('.reschedule-attend-btn');
+const confirm_modal = new bootstrap.Modal(document.querySelector('#confirmModal'));
+const cancel_attend_btns = document.querySelectorAll('.cancel-attend-btn');
+const confirm_cancel_attend_btn = document.querySelector('#confirmCancelAttend');
 
-cards_attend.forEach(card => {
-    card.addEventListener('click', (event) => {
-        const target = event.target;
-        const card_body = target.parentElement.parentElement.firstElementChild.firstElementChild;
-        const date = card_body.children[3].innerText.split('-')[0].trim();
-        const hour = card_body.children[3].innerText.split('-')[1].trim();
+let currentCard = null;
 
-        window.location.href = `schedule.html?nameStudent=${card_body.children[1].innerText}&date=${date}&hour=${hour}`;
+reschedule_btns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const target = e.currentTarget;
+        const name = target.parentElement.previousElementSibling.children[1].innerText;
+        const date = target.parentElement.previousElementSibling.children[3].innerText.split(' - ')[0];
+        const hour = target.parentElement.previousElementSibling.children[3].innerText.split(' - ')[1];
+
+        window.location.href =  `schedule.html?nameStudent=${name}&date=${date}&hour=${hour}`;
     })
 })
 
-const confirm_modal = new bootstrap.Modal(document.querySelector('#confirmModal'));
-const cancel_attend_btns = document.querySelectorAll('#cancelAttendBtn');
-
 cancel_attend_btns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        currentCard = e.target.closest('.card');
         confirm_modal.show();
     })
+});
+
+confirm_cancel_attend_btn.addEventListener('click', () => {
+    const name_canceled = currentCard.querySelectorAll('p.text-secondary')[0].innerText.split(' ')[0];
+    console.log(name_canceled);
+
+    if (currentCard) currentCard.remove();
+
+    alert(`Atendimento de ${name_canceled} cancelado com sucesso!`);
+    confirm_modal.hide();
 });

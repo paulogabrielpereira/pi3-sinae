@@ -47,4 +47,3 @@ login_btn.addEventListener('submit', (e) => {
         login_pass.innerText = '';
     }
 });
-

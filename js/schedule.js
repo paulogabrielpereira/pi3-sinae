@@ -1,3 +1,5 @@
+const btn_back = document.querySelector('.btn-back');
+
 flatpickr("#date", {
     dateFormat: "d/m/Y",
     defaultDate: "today",
@@ -16,3 +18,9 @@ params.forEach((value, key) => {
     const input = document.querySelector(`input[name="${key}"]`) || document.getElementById(key);
     if (input) input.value = value; 
 })
+
+btn_back.addEventListener('click', () => {
+    if (window.location.search !== '') {
+        btn_back.href = 'attend.html';
+    }
+});

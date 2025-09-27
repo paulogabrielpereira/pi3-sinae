@@ -51,43 +51,19 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <div class="card m-3 w-75 border-start  border-3 border-warning shadow" id="borda_esquerda">
-                <div class="card-body mt-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
-                                <p class="fw-bolder text-secondary">Heros Pacheco da Rocha Pereira</p><br>
-                                <p class="fw-bolder text-secondary">20/08/2025 - 14:00</p>
-                            </div>
-                        </div>
-                        <div class="d-inline-flex">
-                            <button type="button" class="btn btn-outline-dark fw-bolder">Reagendar</button>
-                            <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
-                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3" id="cancelAttendBtn">Cancelar Atendimento</button>
-                        </div>   
-                    </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
             <div class="card m-3 w-75 border-start border-3 border-warning shadow" id="borda_esquerda">
-                <div class="card-body mt-3">
+                <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
-                                <p class="fw-bolder text-secondary">Paulo Gabriel de Oliveira Pereira</p><br>
-                                <p class="fw-bolder text-secondary">21/08/2025 - 12:30</p>
-                            </div>
+                        <div class="card-body">
+                            <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
+                            <p class="fw-bolder text-secondary">Paulo Gabriel de Oliveira Pereira</p><br>
+                            <p class="fw-bolder text-secondary">21/08/2025 - 12:30</p>
                         </div>
                         <div class="d-inline-flex">
-                            <button type="button" class="btn btn-outline-dark fw-bolder">Reagendar</button>
+                            <button type="button" class="btn btn-outline-dark fw-bolder reschedule-attend-btn">Reagendar</button>
                             <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
-                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3" id="cancelAttendBtn">Cancelar Atendimento</button>
-                        </div> 
-                    </button>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3 cancel-attend-btn" data-bs-toggle="modal" data-bs-target="confirmModal">Cancelar Atendimento</button>
+                        </div>
                     </div>  
                 </div>
             </div>
@@ -106,7 +82,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-                    <button type="button" class="btn btn-danger">Sim</button>
+                    <button type="button" class="btn btn-danger" id="confirmCancelAttend">Sim</button>
                 </div>
             </div>
         </div>
