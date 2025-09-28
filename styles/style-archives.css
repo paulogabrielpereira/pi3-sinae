@@ -1,3 +1,5 @@
+/* archives.html */
+
 .form-search input
 {
     border-radius: 1.15em 0 0 1.15em !important;
@@ -34,4 +36,65 @@
 .none-alert
 {
     font-size: 2em !important;
+}
+
+/* list-archives.html */
+
+button[data-edit="info"]
+{
+    background: #d88c0c !important;
+    color: white !important;
+}
+
+div[data-content="info"]
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div[data-content="info"] button
+{
+    border-radius: 0 0 6px 0 !important;
+
+    &:hover
+    {
+        background: #c67600 !important;
+    }
+}
+
+div[data-content="info"] .data-content
+{
+    width: 85% !important;
+    padding: .5em !important;
+}
+
+div[data-content="info"] .edit-btn
+{
+    width: 15% !important;
+    transition: width 0.3s ease-in-out;
+
+    &:hover
+    {
+        width: 25% !important;
+    }
+}
+
+#done
+{
+    color: #3854f5 !important;
+}
+
+#marked
+{
+    color: #c67600 !important;
+}
+
+#border-done
+{
+    border-color: #3854f5 !important;
+}
+
+#border-marked
+{
+    border-color: #c67600 !important;
 }

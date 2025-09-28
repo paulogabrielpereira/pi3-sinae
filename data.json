@@ -1,18 +1,12 @@
-{
-    "alunos" : [
-        {"nome":"Paulo Gabriel","ra":"0074666", "telefone":"(31) 9 9999-9999", "resp_nome":"Maria Aparecida","resp_telefone":"(31) 9 7831-3123","data":"15-09-2025","horario":"14:30"},
-        {"nome":"Ana Clara","ra":"0074667", "telefone":"(31) 9 8888-8888", "resp_nome":"João Silva","resp_telefone":"(31) 9 7123-4567","data":"16-09-2025","horario":"10:00"},
-        {"nome":"Lucas Mendes","ra":"0074668", "telefone":"(31) 9 7777-7777", "resp_nome":"Carla Souza","resp_telefone":"(31) 9 7987-6543","data":"17-09-2025","horario":"11:30"},
-        {"nome":"Mariana Costa","ra":"0074669", "telefone":"(31) 9 6666-6666", "resp_nome":"Pedro Costa","resp_telefone":"(31) 9 7345-6789","data":"18-09-2025","horario":"13:00"},
-        {"nome":"Rafael Oliveira","ra":"0074670", "telefone":"(31) 9 5555-5555", "resp_nome":"Ana Oliveira","resp_telefone":"(31) 9 7123-9876","data":"19-09-2025","horario":"15:30"},
-        {"nome":"Beatriz Lima","ra":"0074671", "telefone":"(31) 9 4444-4444", "resp_nome":"Lucas Lima","resp_telefone":"(31) 9 7987-1234","data":"20-09-2025","horario":"09:00"},
-        {"nome":"Gabriel Fernandes","ra":"0074672", "telefone":"(31) 9 3333-3333", "resp_nome":"Mariana Fernandes","resp_telefone":"(31) 9 7345-1234","data":"21-09-2025","horario":"14:00"},
-        {"nome":"Julia Santos","ra":"0074673", "telefone":"(31) 9 2222-2222", "resp_nome":"Ricardo Santos","resp_telefone":"(31) 9 7123-4567","data":"22-09-2025","horario":"10:30"},
-        {"nome":"Pedro Almeida","ra":"0074674", "telefone":"(31) 9 1111-1111", "resp_nome":"Fernanda Almeida","resp_telefone":"(31) 9 7987-6543","data":"23-09-2025","horario":"11:00"},
-        {"nome":"Larissa Ribeiro","ra":"0074675", "telefone":"(31) 9 0000-0000", "resp_nome":"Bruno Ribeiro","resp_telefone":"(31) 9 7345-6789","data":"24-09-2025","horario":"13:30"}
-    ],
-    "logins" : [
-        {"usuario":"thamara.oliveira", "senha":"123456"},
-        {"usuario":"listiane.souza", "senha":"431252"}
-    ]
-}
+[
+    {"nome":"Paulo Gabriel","ra":"0074666", "telefone":"(31) 9 9999-9999", "resp_nome":"Maria Aparecida","resp_telefone":"(31) 9 7831-3123","data":"15-09-2025","horario":"14:30"},
+    {"nome":"Ana Clara","ra":"0074667", "telefone":"(31) 9 8888-8888", "resp_nome":"João Silva","resp_telefone":"(31) 9 7123-4567","data":"16-09-2025","horario":"10:00"},
+    {"nome":"Lucas Mendes","ra":"0074668", "telefone":"(31) 9 7777-7777", "resp_nome":"Carla Souza","resp_telefone":"(31) 9 7987-6543","data":"17-09-2025","horario":"11:30"},
+    {"nome":"Mariana Costa","ra":"0074669", "telefone":"(31) 9 6666-6666", "resp_nome":"Pedro Costa","resp_telefone":"(31) 9 7345-6789","data":"18-09-2025","horario":"13:00"},
+    {"nome":"Rafael Oliveira","ra":"0074670", "telefone":"(31) 9 5555-5555", "resp_nome":"Ana Oliveira","resp_telefone":"(31) 9 7123-9876","data":"19-09-2025","horario":"15:30"},
+    {"nome":"Beatriz Lima","ra":"0074671", "telefone":"(31) 9 4444-4444", "resp_nome":"Lucas Lima","resp_telefone":"(31) 9 7987-1234","data":"20-09-2025","horario":"09:00"},
+    {"nome":"Gabriel Fernandes","ra":"0074672", "telefone":"(31) 9 3333-3333", "resp_nome":"Mariana Fernandes","resp_telefone":"(31) 9 7345-1234","data":"21-09-2025","horario":"14:00"},
+    {"nome":"Julia Santos","ra":"0074673", "telefone":"(31) 9 2222-2222", "resp_nome":"Ricardo Santos","resp_telefone":"(31) 9 7123-4567","data":"22-09-2025","horario":"10:30"},
+    {"nome":"Pedro Almeida","ra":"0074674", "telefone":"(31) 9 1111-1111", "resp_nome":"Fernanda Almeida","resp_telefone":"(31) 9 7987-6543","data":"23-09-2025","horario":"11:00"},
+    {"nome":"Larissa Ribeiro","ra":"0074675", "telefone":"(31) 9 0000-0000", "resp_nome":"Bruno Ribeiro","resp_telefone":"(31) 9 7345-6789","data":"24-09-2025","horario":"13:30"}
+]

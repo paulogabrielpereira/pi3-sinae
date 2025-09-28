@@ -3,6 +3,7 @@
 const none_alert = document.querySelector('.none-block');
 const search_input = document.querySelector('#search');
 const card_files = document.querySelector('.card-files');
+const btn_history = document.querySelectorAll('.btn-history');
 
 let data = [];
 
@@ -27,7 +28,7 @@ function renderCards() {
                   <p class="fw-bolder text-secondary">RA: ${item.ra}</p>
                 </div>
                 <div class="d-inline-flex">
-                  <a href="list-archives.html" class="btn btn-secondary fw-bolder ms-3">Consultar Histórico</a>
+                  <a href="list-archives.html" class="btn btn-secondary fw-bolder ms-3 btn-history">Consultar Histórico</a>
                 </div>
               </div>
             </div>
@@ -44,7 +45,7 @@ function fetchData() {
     fetch('../api.php')
         .then(res => res.json())
         .then(json => {
-            data = json.alunos;
+            data = json;
             renderCards();
         })
         .catch(err => {
@@ -68,4 +69,5 @@ fetchData();
 
 // list-archives.js
 
-const history_title = document.querySelector('');
+const history_title = document.querySelector('#history-title');
+

@@ -16,7 +16,9 @@ const params = new URLSearchParams(window.location.search);
 
 params.forEach((value, key) => {
     const input = document.querySelector(`input[name="${key}"]`) || document.getElementById(key);
-    if (input) input.value = value; 
+    if (input) {
+        input.value = value;
+    }
 })
 
 btn_back.addEventListener('click', () => {
