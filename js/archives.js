@@ -18,7 +18,7 @@ function renderCards() {
     data.forEach(item => {
         const card_div = document.createElement('div');
         card_div.classList.add('d-flex', 'justify-content-center', 'align-items-center');
-
+ 
         card_div.innerHTML = `
           <div class="card m-3 w-75 border-start border-3 border-success shadow" id="borda_esquerda">
             <div class="card-body">
@@ -42,7 +42,7 @@ function renderCards() {
 }
 
 function fetchData() {
-    fetch('../api.php')
+    fetch('../php/api.php')
         .then(res => res.json())
         .then(json => {
             data = json;

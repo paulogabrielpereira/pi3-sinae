@@ -42,7 +42,7 @@ login_pass.addEventListener('blur', (e) => {
 login_btn.addEventListener('submit', (e) => {
     e.preventDefault();    
 
-    if (!userRegex.test(user)) {
+    if (!userRegex.test(user) || !passRegex.test(pass)) {
         login_user.innerText = '';
         login_pass.innerText = '';
     }
