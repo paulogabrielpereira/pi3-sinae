@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-attend.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -27,37 +28,68 @@
         <div class="d-flex justify-content-between align-items-center m-5">
             <h5 class="fw-bolder mb-0">Meus Atendimentos</h6>
             <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-outline-dark d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#filtrar">
+                <button type="button" class="btn btn-outline-dark d-flex align-items-center p-2" data-bs-toggle="modal" data-bs-target="#filtrar">
                     <span class=" material-symbols-outlined icon-filter">filter_alt</span>
                     <span class="ms-2 fw-bolder">Filtrar</span>
                 </button>
-                <div class="modal" id="filtrar"tabindex="1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h6 class="modal-title fw-bolder">Filtros</h6>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Área em Desenvolvimento</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary">Aplicar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center flex-column align-items-center" id="sect-attend">
             <div class="card m-3 w-75 border-start border-3 border-warning shadow" id="borda_esquerda">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="card-body">
+                        <div class="card-info">
                             <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
                             <p class="fw-bolder text-secondary">Paulo Gabriel de Oliveira Pereira</p><br>
-                            <p class="fw-bolder text-secondary">21/08/2025 - 12:30</p>
+                            <p class="fw-bolder text-secondary">01/11/2025 - 12:30</p>
+                        </div>
+                        <div class="d-inline-flex">
+                            <button type="button" class="btn btn-outline-dark fw-bolder reschedule-attend-btn">Reagendar</button>
+                            <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3 cancel-attend-btn" data-bs-toggle="modal" data-bs-target="confirmModal">Cancelar Atendimento</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="card m-3 w-75 border-start border-3 border-warning shadow" id="borda_esquerda">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-info">
+                            <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
+                            <p class="fw-bolder text-secondary">Daniel Silva Borges</p><br>
+                            <p class="fw-bolder text-secondary">12/09/2025 - 10:30</p>
+                        </div>
+                        <div class="d-inline-flex">
+                            <button type="button" class="btn btn-outline-dark fw-bolder reschedule-attend-btn">Reagendar</button>
+                            <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3 cancel-attend-btn" data-bs-toggle="modal" data-bs-target="confirmModal">Cancelar Atendimento</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="card m-3 w-75 border-start border-3 border-warning shadow" id="borda_esquerda">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-info">
+                            <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
+                            <p class="fw-bolder text-secondary">Yan Gabriel Martins Leite</p><br>
+                            <p class="fw-bolder text-secondary">09/12/2025 - 14:30</p>
+                        </div>
+                        <div class="d-inline-flex">
+                            <button type="button" class="btn btn-outline-dark fw-bolder reschedule-attend-btn">Reagendar</button>
+                            <a href="realize-attend.html" type="button" class="btn btn-outline-success fw-bolder ms-3">Iniciar Atendimento</a>
+                            <button type="button" class="btn btn-outline-danger fw-bolder ms-3 cancel-attend-btn" data-bs-toggle="modal" data-bs-target="confirmModal">Cancelar Atendimento</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="card m-3 w-75 border-start border-3 border-warning shadow" id="borda_esquerda">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-info">
+                            <h6 class="fw-bolder text-warning">Atendimento Agendado</h6>
+                            <p class="fw-bolder text-secondary">Heros Pacheco da Rocha Pereira</p><br>
+                            <p class="fw-bolder text-secondary">10/10/2025 - 15:30</p>
                         </div>
                         <div class="d-inline-flex">
                             <button type="button" class="btn btn-outline-dark fw-bolder reschedule-attend-btn">Reagendar</button>
@@ -83,6 +115,33 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
                     <button type="button" class="btn btn-danger" id="confirmCancelAttend">Sim</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal fade" id="filtrar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title fw-bolder">Filtros</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="filter-list d-flex flex-column align-items-center gap-3">
+                        <li class="filter-item d-flex align-items-center gap-3">
+                            <label class="btn btn-secondary" for="filterName">Por nome</label>
+                            <input type="checkbox" name="filter_name" id="filterName" class="input-check">
+                        </li>
+                        <li class="filter-item d-flex align-items-center gap-3">
+                            <label class="btn btn-secondary" for="filterDate">Por data e hora</label>
+                            <input type="checkbox" name="filter_date" id="filterDate" class="input-check">
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aplicar</button>
                 </div>
             </div>
         </div>
