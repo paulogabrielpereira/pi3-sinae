@@ -1,6 +1,6 @@
 const btn_back = document.querySelector('.btn-back');
 
-flatpickr("#date", {
+const fp = flatpickr("#date", {
     dateFormat: "d/m/Y",
     defaultDate: "today",
     minDate: "today",
@@ -11,8 +11,19 @@ flatpickr("#date", {
         }
     ]
 });
-
 const params = new URLSearchParams(window.location.search);
+
+
+const dataURL = params.get("data"); 
+
+
+if (dataURL) {
+    fp.setDate(dataURL, true); 
+}
+
+
+
+
 
 params.forEach((value, key) => {
     const input = document.querySelector(`input[name="${key}"]`) || document.getElementById(key);
@@ -26,3 +37,5 @@ btn_back.addEventListener('click', () => {
         btn_back.href = 'attend.html';
     }
 });
+
+

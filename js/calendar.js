@@ -26,11 +26,22 @@ function gerarCalendario() {
 
     // Preencher os dias do mês
     for (let dia = 1; dia <= diasNoMes; dia++) {
-        if (dia === diaHoje) {
-            tabela += `<td class="day today text-white fw-bold border border-0"> <span class="tooltip">Agendar Atendimento</span> ${dia}</td>`; // destaca dia atual
-        } else {
-            tabela += `<td class="day"> <span class="tooltip">Agendar Atendimento</span> ${dia}</td>`;
-        }
+        coluna = (primeiroDia + dia - 1) % 7
+    
+        if (dia === diaHoje ) {
+         if(coluna === 0 || coluna === 6){
+                 tabela += `<td class="day today text-white fw-bold border border-0">  ${dia} </td> `; 
+            }else{
+            tabela += `<td class="day today text-white fw-bold border border-0"> <span class="tooltip">Agendar Atendimento</span> <button onclick="Marcar_consulta(${dia},${mes},${ano})" class="day today text-white fw-bold border border-0 text-decoration-none h-100 w-100" "> ${dia}</a> </td> `; // destaca dia atual
+        }} else {
+            if(dia > diaHoje){
+                if(coluna === 0 || coluna === 6){
+                     tabela += `<td class="day dias_passsados"> ${dia}</td>`;
+                }else{
+                tabela += `<td class="day"> <span class="tooltip">Agendar Atendimento</span> <button onclick="Marcar_consulta(${dia},${mes},${ano})" class="day bg-transparent border-0"> ${dia}</button> </td>`;
+            }}else{
+            tabela += `<td class="day dias_passsados"> ${dia}</td>`;
+        }}
         if ((dia + primeiroDia) % 7 === 0) tabela += '</tr><tr>'; // nova linha a cada semana
     }
 
@@ -39,3 +50,13 @@ function gerarCalendario() {
 }
 
 gerarCalendario();
+
+
+function Marcar_consulta(d,m,a){
+   var x = d+"-"+(m+1)+"-"+a
+
+    window.location.href='pages/schedule.html?data='+encodeURIComponent(x)
+
+
+
+}
