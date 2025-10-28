@@ -126,3 +126,8 @@ td:hover .tooltip {
     justify-content: center;
     gap: 2em !important;
 }
+
+.invalid-feedback {
+  white-space: pre-line; /* interpreta \n como quebra de linha */
+}
+
