@@ -71,3 +71,39 @@ fetchData();
 
 const history_title = document.querySelector('#history-title');
 
+
+
+
+// FILTRO
+const filter_name = document.getElementById('filterName');
+const filter_date = document.getElementById('filterDate');
+const btn_filter = document.querySelector('.modal-footer .btn-primary');
+const div_cards = document.getElementById('sect-attend');
+const list_cards = Array.from(div_cards.querySelectorAll('.card'));
+
+
+btn_filter.addEventListener('click', () => {
+    let ordered_cards = [...list_cards];
+    if (filter_name.checked) {
+        ordered_cards.sort((a, b) => {
+            let name_a = a.querySelector('.card-info p').textContent.toLowerCase();
+            let name_b = b.querySelector('.card-info p').textContent.toLowerCase();
+            return name_a.localeCompare(name_b);
+        });
+    }
+
+    if (filter_date.checked) {
+        ordered_cards.sort((a, b) => {
+            let da = a.querySelectorAll('.card-info p')[1].textContent.split('-')[0].split('/');
+            let db = b.querySelectorAll('.card-info p')[1].textContent.split('-')[0].split('/');
+            let date_a = new Date(da[2], da[1] - 1, da[0]);
+            let date_b = new Date(db[2], db[1] - 1, db[0]);
+            return date_a - date_b;
+        });
+    }
+
+   
+    div_cards.innerHTML = '';
+    ordered_cards.forEach(card => div_cards.appendChild(card));
+});
+
