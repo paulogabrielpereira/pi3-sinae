@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/style-archives.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -26,12 +27,25 @@
     <main>
         <div class="card m-3">
             <div class="card-body">
-                <form action="archives.html" method="get" class="form-search d-flex justify-content-center">
-                    <input type="text" name="search" id="search" class="form-control w-50 border-secondary border-2" placeholder="Buscar..." autocomplete="off">
-                    <button type="submit" class="btn btn-secondary" id="btn-search">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
-                </form>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="row w-100 m-2">
+                        <div class="col-10">
+                            <form action="archives.html" method="get" class="form-search d-flex w-100">
+                                <input type="text" name="search" id="search" class="form-control border-secondary border-2" placeholder="Buscar..." autocomplete="off">
+                                <button type="submit" class="btn btn-secondary" id="btn-search">
+                                    <span class="material-symbols-outlined">search</span>
+                                </button>
+                            </form>
+                
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-dark d-flex align-items-center p-2" data-bs-toggle="modal" data-bs-target="#filtrar">
+                                <span class=" material-symbols-outlined icon-filter">filter_alt</span>
+                                <span class="ms-2 fw-bolder">Filtrar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>        
             </div>
             <div class="card m-3 card-files d-flex">
                 <div class="none-block text-body">
@@ -40,7 +54,34 @@
                 </div>
             </div>
         </div>
+        
     </main>
+    <section class="modal fade" id="filtrar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title fw-bolder">Filtros</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="filter-list d-flex flex-column align-items-center gap-3">
+                        <li class="filter-item d-flex align-items-center gap-3">
+                            <label class="btn btn-secondary" for="filterName">Por nome</label>
+                            <input type="checkbox" name="filter_name" id="filterName" class="input-check">
+                        </li>
+                        <li class="filter-item d-flex align-items-center gap-3">
+                            <label class="btn btn-secondary" for="filterDate">Por data e hora</label>
+                            <input type="checkbox" name="filter_date" id="filterDate" class="input-check">
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aplicar</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="../js/today.js"></script>
     <script src="../js/archives.js"></script>
 </body>
